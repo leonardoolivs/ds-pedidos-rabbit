@@ -10,6 +10,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -23,6 +25,7 @@ public class Pedido {
     private Double valorTotal;
     private String emailNotificacao;
     private StatusPedido status = StatusPedido.EM_PROCESSAMENTO;
+    private List<ItemPedido> itens = new ArrayList<>();
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime dataHora = LocalDateTime.now();
