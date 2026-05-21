@@ -22,8 +22,8 @@ public class Pedido {
     private String cliente;
     private Double valorTotal;
     private String emailNotificacao;
-    private StatusPedido status;
+    private StatusPedido status = StatusPedido.EM_PROCESSAMENTO;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime dataHora;
+    private LocalDateTime dataHora = LocalDateTime.now();
 }
