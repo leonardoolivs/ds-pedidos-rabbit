@@ -1,6 +1,8 @@
 package com.rabbit.entities;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonSetter;
+import com.fasterxml.jackson.annotation.Nulls;
 import com.rabbit.enums.StatusPedido;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
